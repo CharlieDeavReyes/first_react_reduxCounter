@@ -9,6 +9,7 @@ function Counter() {
     // And include the useDispatch hook...
     const dispatch = useDispatch()
     const [ input, setInput ] = useState(0)
+    
     const byAmountSubmit = (e) => {
         e.preventDefault()
         dispatch(incrementByAmount(Number(input)))
